@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int palindrome(int n){
+bool palindrome(int n){
     int temp = n, rev = 0;
     if(temp<0) return false;
     while(temp>0){
