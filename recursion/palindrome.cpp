@@ -1,17 +1,17 @@
 #include <iostream>
 using namespace std;
 
-bool palindrome(string a, int i, int n)
+bool palindrome(string a, int i)
 {
-    if (i >= n / 2)
+    if (i >= a.size())
     {
         return true;
     }
-    if (a[i] != a[n - i - 1])
+    if (a[i] != a[a.size() - i - 1])
     {
         return false;
     }
-    return palindrome(a, n, i + 1);
+    return palindrome(a, i + 1);
 }
 
 int main()
@@ -19,6 +19,5 @@ int main()
     string a;
     cout << "Enter a string : ";
     cin >> a;
-    int n = a.size();
-    cout << palindrome(a, 0, n);
+    cout << palindrome(a, 0);
 }
