@@ -11,8 +11,7 @@ int main()
     int *ptr = &num;
     *ptr += 1;
     cout << "The value of num is : " << num << endl
-         << "The value of ptr is : " << *ptr;
-    cout << ptr;
+         << "The value of ptr is : " << *ptr<<endl;
 
     // bad practice
     // int *p;
@@ -21,4 +20,16 @@ int main()
     // good practice
     // int *p = 0;
     // cout << "Good practice : " << *p;
+
+    // copying a pointer
+    // int *q = ptr;
+    // cout<<q;
+    
+    
+    // pointer arithmatics
+    int i = 8;
+    int *p = &i;
+    cout<<"Value is " <<(*p)++<<endl;
+    p+=5;
+    cout<<*p;
 }
