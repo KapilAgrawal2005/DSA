@@ -12,4 +12,13 @@ int main()
     *ptr += 1;
     cout << "The value of num is : " << num << endl
          << "The value of ptr is : " << *ptr;
+    cout << ptr;
+
+    // bad practice
+    // int *p;
+    // cout<<"bad practice : "<<*p;
+
+    // good practice
+    // int *p = 0;
+    // cout << "Good practice : " << *p;
 }
