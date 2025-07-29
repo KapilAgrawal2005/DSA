@@ -32,6 +32,5 @@ int main()
         cout << "Enter the number : ";
         cin >> a[i];
     }
-
     cout << findMinInRotated(a, n);
 }
