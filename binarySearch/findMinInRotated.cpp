@@ -21,7 +21,7 @@ int findMinInRotated(int a[], int n)
     }
     return ans;
 }
-int main()
+int main()  
 {
     int n;
     cout << "Enter the number of elements in the array : ";
